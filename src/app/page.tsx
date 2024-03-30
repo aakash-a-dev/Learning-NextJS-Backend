@@ -1,10 +1,10 @@
-import User from "./user/User";
+import User from "./user/page";
 
 
 export default function Home() {
   return (
     <>
-      <User />
+      Hi there
     </>
   );
 }
