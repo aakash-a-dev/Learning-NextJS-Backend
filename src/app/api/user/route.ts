@@ -2,11 +2,9 @@ import { PrismaClient } from "@prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 
 const client = new PrismaClient();
-export function GET(req: NextRequest) {
-    return NextResponse.json({
-        email: "aakash@mail.com",
-        name: "Aakash"
-    })
+export async function GET(req: NextRequest) {
+
+   
 }
 // 
 
@@ -26,7 +24,7 @@ export async function  POST(req: NextRequest) {
         body
     })
     } catch (error) {
-        NextResponse.json({
+       return NextResponse.json({
             message: "Error while sign up"
         }, {
             status: 411
