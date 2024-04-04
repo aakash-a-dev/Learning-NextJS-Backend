@@ -25,7 +25,7 @@ export async function  POST(req: NextRequest) {
     })
     } catch (error) {
        return NextResponse.json({
-            message: "Error while sign up"
+            message: "Error while signup"
         }, {
             status: 411
         })
